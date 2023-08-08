@@ -16,7 +16,8 @@ class TextFieldLogin extends StatelessWidget {
       required this.icon,
       this.isobscureText = false,
       this.inputType = TextInputType.text,
-      this.isEnable = true, required String? Function(dynamic value) validator});
+      this.isEnable = true,
+      required String? Function(dynamic value) validator});
 
   @override
   Widget build(BuildContext context) {
