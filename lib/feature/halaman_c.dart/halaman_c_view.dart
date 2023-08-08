@@ -39,7 +39,6 @@ class _HalamanCState extends State<HalamanC> {
   }
 }
 
-// Fungsi untuk membuat grafik
 Widget _buildChart(String title, List<double> values) {
   return Expanded(
     child: Container(
@@ -48,10 +47,7 @@ Widget _buildChart(String title, List<double> values) {
         aspectRatio: 1.5,
         child: LineChart(
           LineChartData(
-            titlesData: const FlTitlesData(
-                // leftTitles: SideTitles(showTitles: true),
-                // bottomTitles: SideTitles(showTitles: true),
-                ),
+            titlesData: const FlTitlesData(),
             gridData: const FlGridData(show: true),
             borderData: FlBorderData(
               show: true,

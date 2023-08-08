@@ -55,7 +55,6 @@ class _HalamanAState extends State<HalamanA> {
   }
 
   Future<void> _getLocation() async {
-    // Periksa apakah izin lokasi telah diberikan
     if (await Permission.location.isGranted) {
       try {
         Position position = await Geolocator.getCurrentPosition(
